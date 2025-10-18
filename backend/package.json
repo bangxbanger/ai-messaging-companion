@@ -1,0 +1,31 @@
+{
+  "name": "ai-messaging-companion",
+  "version": "1.0.0",
+  "description": "AI-powered messaging companion for macOS with text rephrasing and voice generation",
+  "private": true,
+  "workspaces": [
+    "backend/convex"
+  ],
+  "scripts": {
+    "dev:backend": "cd backend/convex && npm run dev",
+    "deploy:backend": "cd backend/convex && npm run deploy",
+    "build:macos": "xcodebuild -project macos/CompanionApp.xcodeproj -scheme 'Bro' -configuration Release build",
+    "setup": "npm install && cd backend/convex && npm install"
+  },
+  "keywords": [
+    "ai",
+    "messaging",
+    "macos",
+    "groq",
+    "elevenlabs",
+    "supabase",
+    "convex"
+  ],
+  "author": "",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/ai-messaging-companion"
+  }
+}
+
